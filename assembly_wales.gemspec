@@ -5,7 +5,7 @@ require "assembly_wales/version"
 
 Gem::Specification.new do |s|
   s.name     = "assembly_wales"
-  s.version  = AssemblyWales::VERSION.dup
+  s.version  = AssemblyWales::VERSION
   s.date     = "2013-02-25"
   s.summary  = "TODO: Summary of project"
   s.email    = "sam@samknight.co.uk"
@@ -15,9 +15,12 @@ Gem::Specification.new do |s|
   s.description = "A Gem that consumes data from the Welsh Assembly"
   
   dependencies = [
-    # Examples:
-    # [:runtime,     "rack",  "~> 1.1"],
-    # [:development, "rspec", "~> 2.1"],
+    [:runtime, "httparty"],
+    [:development, "minitest"],
+    [:development, "webmock"],
+    [:development, "vcr"],
+    [:development, "turn"],
+    [:development, "rake"],
   ]
   
   s.files         = Dir['**/*']
