@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.description = "A Gem that consumes data from the Welsh Assembly"
   
   dependencies = [
-    [:runtime, "httparty"],
+    [:runtime, "nokogiri"],
     [:development, "minitest"],
     [:development, "webmock"],
     [:development, "vcr"],
