@@ -1,15 +1,15 @@
 
 # -*- encoding: utf-8 -*-
 $:.push('lib')
-require "welsh_assembly/version"
+require "assembly_wales/version"
 
 Gem::Specification.new do |s|
-  s.name     = "welsh_assembly-ruby"
-  s.version  = WelshAssembly::VERSION.dup
+  s.name     = "assembly_wales"
+  s.version  = AssemblyWales::VERSION.dup
   s.date     = "2013-02-25"
   s.summary  = "TODO: Summary of project"
   s.email    = "sam@samknight.co.uk"
-  s.homepage = "http://github.com/samknight/welsh_assembly-ruby"
+  s.homepage = "http://github.com/samknight/assembly_wales"
   s.authors  = ['Sam Knight']
   
   s.description = "A Gem that consumes data from the Welsh Assembly"
