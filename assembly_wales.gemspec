@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name     = "assembly_wales"
   s.version  = AssemblyWales::VERSION
   s.date     = "2013-02-25"
-  s.summary  = "TODO: Summary of project"
+  s.summary  = "A Gem that consumes data from the Welsh Assembly"
   s.email    = "sam@samknight.co.uk"
   s.homepage = "http://github.com/samknight/assembly_wales"
   s.authors  = ['Sam Knight']
