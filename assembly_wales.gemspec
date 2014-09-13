@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
   
   dependencies = [
     [:runtime, "httparty"],
-    [:development, "pry"],
     [:development, "minitest"],
     [:development, "webmock"],
     [:development, "vcr"],
