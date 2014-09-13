@@ -1,5 +1,5 @@
 module AssemblyWales 
-  BASE_URL = 'http://www.assemblywales.org/docs/rop_xml/'
+  BASE_URL = 'http://www.assemblywales.org/Record%20of%20Proceedings%20XML/'
   class Plenary
 
     attr_accessor :date, :record, :speeches
@@ -14,11 +14,11 @@ module AssemblyWales
     private
 
     def build_url(date)
-      BASE_URL + date.strftime('%y%m%d') + '_plenary_bilingual.xml'
+      BASE_URL + date.strftime('%y%m%d') + '_Plenary_Bilingual.xml'
     end
 
     def parse_xml(url)
-      HTTParty.get(url).first[1].first[1]
+      HTTParty.get(url).first[1]["XML_Plenary_Bilingual"]
     end
 
     def parse_speeches
