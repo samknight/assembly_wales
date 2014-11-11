@@ -1,12 +1,12 @@
-module AssemblyWales 
-  BASE_URL = 'http://www.assemblywales.org/Record%20of%20Proceedings%20XML/'
+module AssemblyWales
+  BASE_URL = 'http://www.assembly.wales/Record%20of%20Proceedings%20XML/'
   class Plenary
 
     attr_accessor :date, :record, :speeches
 
     # Public: Retrieve a Plenary record
     def initialize(date)
-      @date = date 
+      @date = date
       @record = parse_xml(build_url(date))
       @speeches = parse_speeches
     end
@@ -26,7 +26,7 @@ module AssemblyWales
       record.each do |raw_speech|
         speech = {}
         raw_speech.each_pair do |k,v|
-          speech.merge!(k.downcase => v) 
+          speech.merge!(k.downcase => v)
         end
         collect_speeches << AssemblyWales::Speech.new(speech)
       end
